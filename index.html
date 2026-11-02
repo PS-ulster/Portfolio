@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Prasanga Shrestha | Portfolio</title>
+<meta name="description" content="Computing student building secure Python APIs, with a focus on AI and cybersecurity.">
+<style>
+  :root{
+    --bg:#0b1220; --panel:#111a2e; --line:#1f2b46; --text:#e6ebf5; --muted:#93a1bd;
+    --accent:#4ade80; --accent2:#38bdf8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65}
+  a{color:var(--accent2);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+  nav{position:sticky;top:0;background:rgba(11,18,32,.88);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+  nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+  nav .brand{font-weight:700;letter-spacing:.3px;color:var(--text)}
+  nav ul{display:flex;gap:24px;list-style:none;font-size:.95rem}
+  nav ul a{color:var(--muted)}
+  nav ul a:hover{color:var(--text);text-decoration:none}
+  header.hero{padding:96px 0 72px}
+  .tag{display:inline-block;font-size:.8rem;color:var(--accent);border:1px solid rgba(74,222,128,.35);padding:4px 12px;border-radius:999px;margin-bottom:20px}
+  h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.1;margin-bottom:18px;letter-spacing:-.02em}
+  h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{font-size:1.15rem;color:var(--muted);max-width:640px;margin-bottom:32px}
+  .btns{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{padding:12px 22px;border-radius:10px;font-weight:600;font-size:.95rem;border:1px solid var(--line)}
+  .btn.primary{background:var(--accent);color:#062b14;border-color:var(--accent)}
+  .btn.primary:hover{text-decoration:none;filter:brightness(1.08)}
+  .btn.ghost{color:var(--text)}
+  .btn.ghost:hover{text-decoration:none;background:var(--panel)}
+  section{padding:64px 0;border-top:1px solid var(--line)}
+  h2{font-size:1.7rem;margin-bottom:8px;letter-spacing:-.01em}
+  .sub{color:var(--muted);margin-bottom:32px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:32px}
+  .card h3{font-size:1.4rem;margin-bottom:6px}
+  .card .meta{color:var(--muted);font-size:.9rem;margin-bottom:16px}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:24px 0}
+  .stat{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center}
+  .stat b{display:block;font-size:1.9rem;color:var(--accent)}
+  .stat small{color:var(--muted)}
+  ul.points{margin:16px 0 20px 20px;color:var(--text)}
+  ul.points li{margin-bottom:8px}
+  ul.points li::marker{color:var(--accent)}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chip{font-size:.85rem;padding:6px 14px;border-radius:999px;background:var(--bg);border:1px solid var(--line);color:var(--text)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+  .grid .card{padding:24px}
+  .grid h3{font-size:1.05rem;margin-bottom:12px}
+  .next p{color:var(--muted)}
+  footer{border-top:1px solid var(--line);padding:32px 0;color:var(--muted);font-size:.9rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+  @media(max-width:640px){nav ul{gap:14px}header.hero{padding:64px 0 48px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="brand" href="#top">Prasanga Shrestha</a>
+    <ul>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#next">Next</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="tag">Computing student &middot; Ulster University</span>
+    <h1>Building secure software with <span>Python, APIs and AI</span>.</h1>
+    <p class="lead">I'm a computing student who builds REST APIs, tests them properly, and cares about explaining how they work. I'm looking for junior developer, cybersecurity and IT opportunities where I can keep learning and ship real work.</p>
+    <div class="btns">
+      <a class="btn primary" href="#project">See my project</a>
+      <a class="btn ghost" href="https://github.com/PS-ulster">GitHub profile</a>
+    </div>
+  </div>
+</header>
+
+<section id="project">
+  <div class="wrap">
+    <h2>Featured project</h2>
+    <p class="sub">Backend coursework, COM661</p>
+    <div class="card">
+      <h3>PhishGuard: phishing website detection API</h3>
+      <p class="meta">Flask &middot; MongoDB &middot; JWT &middot; bcrypt &middot; Postman</p>
+      <p>A REST API that checks a URL and returns a verdict with plain-English reasons, so a user understands <em>why</em> a site looks risky instead of just seeing a score.</p>
+
+      <div class="stats">
+        <div class="stat"><b>32</b><small>API endpoints</small></div>
+        <div class="stat"><b>348</b><small>tests passing</small></div>
+        <div class="stat"><b>158</b><small>Postman requests</small></div>
+        <div class="stat"><b>5,000</b><small>sites in dataset</small></div>
+      </div>
+
+      <ul class="points">
+        <li><b>Explainable detection:</b> <code>POST /check</code> scores a URL with rules such as look-alike brand names, missing HTTPS and risky keywords, and returns the reasons behind the verdict.</li>
+        <li><b>Real data:</b> built on a balanced 5,000-site sample of the PhiUSIIL phishing dataset, using 20 features that can be explained to a user.</li>
+        <li><b>Security:</b> login with hashed passwords, token-based authentication, and role-based access for normal users and admins.</li>
+        <li><b>Full feature set:</b> search and filtering, statistics, map queries, brand management, and consistent error handling with correct status codes.</li>
+        <li><b>Tested:</b> a 158-request Postman collection with 348 automated tests, all passing.</li>
+      </ul>
+
+      <div class="chips">
+        <span class="chip">Python</span><span class="chip">Flask</span><span class="chip">MongoDB</span>
+        <span class="chip">PyMongo</span><span class="chip">PyJWT</span><span class="chip">bcrypt</span><span class="chip">Postman</span>
+      </div>
+      <!-- When your marks are released and the repo is public, add:
+      <p style="margin-top:20px"><a href="https://github.com/PS-ulster/phishguard-api">View the code on GitHub &rarr;</a></p> -->
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <p class="sub">What I work with</p>
+    <div class="grid">
+      <div class="card"><h3>Backend</h3>
+        <div class="chips"><span class="chip">Python</span><span class="chip">Flask</span><span class="chip">REST API design</span><span class="chip">Blueprints</span></div></div>
+      <div class="card"><h3>Data</h3>
+        <div class="chips"><span class="chip">MongoDB</span><span class="chip">PyMongo</span><span class="chip">Dataset cleaning</span><span class="chip">Feature selection</span></div></div>
+      <div class="card"><h3>Security</h3>
+        <div class="chips"><span class="chip">JWT auth</span><span class="chip">Password hashing</span><span class="chip">Role-based access</span><span class="chip">Input validation</span></div></div>
+      <div class="card"><h3>Tools</h3>
+        <div class="chips"><span class="chip">Git &amp; GitHub</span><span class="chip">Postman testing</span><span class="chip">Command line</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="next" class="next">
+  <div class="wrap">
+    <h2>What I'm working on next</h2>
+    <p class="sub">Learning in public</p>
+    <div class="card">
+      <p>PhishGuard currently uses hand-written rules. My next step is training a machine learning model on the same dataset and comparing it against the rules. I'm also building up sales and communication skills, because good engineers need to explain their work clearly.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Get in touch</h2>
+    <p class="sub">Open to junior developer, cybersecurity and IT roles, and placements.</p>
+    <div class="btns">
+      <a class="btn primary" href="https://github.com/PS-ulster">GitHub: PS-ulster</a>
+      <!-- Add your LinkedIn and email here, for example:
+      <a class="btn ghost" href="https://www.linkedin.com/in/your-name">LinkedIn</a>
+      <a class="btn ghost" href="mailto:you@example.com">Email me</a> -->
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Prasanga Shrestha</span>
+    <span>Built with HTML and CSS</span>
+  </div>
+</footer>
+
+</body>
+</html>
